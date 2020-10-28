@@ -7,13 +7,13 @@ class EstructuradeDatos{
     Scanner leer=new Scanner(System.in);
     
     int opcion, edad,abono,numerod,opcion2,numeros,n,n2,n3,n4,posit=0,nega=0,fare,repit=0,f,nmc7;
-    double op1,op2,op3,r1, r2, r3,numero,digit,bin=0,exp=0,celc,kel,rank;
+    double op1,op2,op3,r1, r2, r3,numero,digit,celc,kel,rank;
     char si;
     double a,b,c,d;
     
     
 do{
-    System.out.println("3IV9-CORONADO-SEGUNDO-JUAN-YAEL")
+    System.out.println("3IV9-CORONADO-SEGUNDO-JUAN-YAEL");
     System.out.println("Menu de estructura de datos");
     System.out.println("Elija una opcion");
     System.out.println("1.-Abono segun la edad");
@@ -78,18 +78,20 @@ do{
     break;
    
     case 2:
-        do{
-        do{     
-        System.out.println("Ingrese el numero decimal");                                              
-        numerod = leer.nextInt();
-        }while(numerod < 0);
-        
-        while(numerod!=0){
-                digit = numerod % 2;           
-                bin = bin + digit * Math.pow(10, exp);                                                   
-                exp++;
-                numerod = numerod/2;
-        }          
+        do{  
+            int dec=25;
+            String binario="";
+            System.out.println("Escriba el numero decimal");
+            
+            dec = leer.nextInt();
+            
+
+            while(dec>0){
+                binario=(dec%2)+binario;
+                dec/=2;
+            }
+            System.out.println(binario);
+                  
         do{                                   
             System.out.println();
             System.out.println("1.- Repetir");
