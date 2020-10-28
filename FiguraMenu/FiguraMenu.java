@@ -3,15 +3,14 @@ class FiguraMenu{
 
     public static void main(String[] args){
 
-        
-
         Scanner entrada = new Scanner(System.in);
         int opcion=0,opcion1=0;
         int altura, base;
         double resultado;
         char inicio;
         
-    do {
+        do {
+        System.out.println();
         System.out.println("Bienvenido al programa de calculo de areas y perimetros");
         System.out.println("Elija una de las siguientes opciones:");
         System.out.println("1.- Calcular area");
@@ -117,7 +116,9 @@ class FiguraMenu{
                     }
                     break;
                 default:
-                    System.out.println("Gracias por venir. nwn/");
+                    System.out.println();
+                    System.out.println("Regresando a menu principal");
+                    System.out.println();
             }
         break; 
     
@@ -200,7 +201,9 @@ class FiguraMenu{
                 }
                 break;
             default:
-                System.out.println("Gracias por venir. nwn/");
+                System.out.println();
+                System.out.println("Regresando a menu principal");
+                System.out.println();
             }
         break;
          
