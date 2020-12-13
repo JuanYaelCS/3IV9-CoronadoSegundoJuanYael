@@ -2,9 +2,7 @@ public class Figura{
 
     private double lado;
 
-    public Figura(){
-
-    }
+   
     public Figura(double lado){
         this.lado = lado;
     }

@@ -15,7 +15,10 @@ public class Metodos{
                                                                     +"\n1.-Calcular la edad"
                                                                     +"\n2.-Perimetros y areas"
                                                                     +"\n3.-Compania telefononica"
-                                                                    +"\n4.-Salir"));
+                                                                    +"\n4.-Calcular sueldo del empleado"
+                                                                    +"\n5.-Proovedores"
+                                                                    +"\n6.-Libros"
+                                                                    +"\n7.-Salir"));
         switch(opcion){
                 case 1:
                 
@@ -36,6 +39,47 @@ public class Metodos{
         break;
                 
         case 4:
+        Empleado emp = new Empleado();
+        Supervisor sup = new Supervisor();
+        id = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el Id: "));
+        nombre = JOptionPane.showInputDialog(null, "Ingrese su nombre: ");
+        puesto = JOptionPane.showInputDialog(null, "Ingrese su puesto: ");
+        emp.setId();
+        emp.setNombre();
+        emp.setPuesto();
+        sup.setId();
+        sup.setNombre();
+        sup.setPuesto();
+        if(puesto=="supervisor"){
+            sueldo=8000;
+            sueldo=(8000)-(8000*0.2)-(8000*0.1)-(8000*0.16);
+            sup.setSueldo();
+            sup.mostrar();
+        } else {
+            if(puesto=="empleado"){
+            sueldo=5000;
+            int Hd = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese sus horas extras diurnas: "));
+            int HdT= (Hn*50);
+            int Hn = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese sus horas extras nocturnas: "));
+            int HnT= (Hn*60);
+            sueldo=(5000)+(HdT+Hnt);
+            emp.setSueldo();
+            emp.mostrar();
+        }
+        }
+        
+
+        break;
+        
+        case 5:
+        
+        break;
+        
+        case 6:
+        
+        break;
+        
+        case 7:
         System.exit(0);
         break;
         }
